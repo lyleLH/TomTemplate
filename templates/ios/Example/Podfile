@@ -1,7 +1,6 @@
-source 'http://gitlab.yeahka.com/App/iOS/Modules/YKSpecs.git'
 #source 'https://github.com/CocoaPods/Specs.git'
 source 'https://cdn.cocoapods.org/'                  #官方仓库地址 cdn
-source 'http://gitlab.yeahka.com/App/iOS/YeahkaNativeComSpecsIndex.git'
+source 'https://github.com/lyleLH/MTSpecs.git'
 
 platform :ios, '10.0'
 
