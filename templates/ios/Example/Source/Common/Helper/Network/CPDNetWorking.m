@@ -8,64 +8,64 @@
 
 #import "CPDNetWorking.h"
 
-@implementation CPDNetWorking
-+ (YKURLSessionTask *)syt_postWithApiClass:(kCPDAPIClass)class
-                                  ApiMethod:(kCPDAPIMethod)method
-                                refreshCache:(BOOL)refreshCache
-                                      params:(NSDictionary *)params
-                                     success:(YKResponseSuccess)success  {
-    return [self syt_postWithApiClass:class ApiMethod:method refreshCache:refreshCache params:params success:success fail:^(NSError *error) {
-//        [MBProgressHUD hideHUD];
-//        [MBProgressHUD showErrorMessage:@"请求失败"];
-    }];
-}
+// @implementation CPDNetWorking
+// + (YKURLSessionTask *)syt_postWithApiClass:(kCPDAPIClass)class
+//                                   ApiMethod:(kCPDAPIMethod)method
+//                                 refreshCache:(BOOL)refreshCache
+//                                       params:(NSDictionary *)params
+//                                      success:(YKResponseSuccess)success  {
+//     return [self syt_postWithApiClass:class ApiMethod:method refreshCache:refreshCache params:params success:success fail:^(NSError *error) {
+// //        [MBProgressHUD hideHUD];
+// //        [MBProgressHUD showErrorMessage:@"请求失败"];
+//     }];
+// }
 
-+ (YKURLSessionTask *)syt_postWithApiClass:(kCPDAPIClass)class
-                                  ApiMethod:(kCPDAPIMethod)method
-                               refreshCache:(BOOL)refreshCache
-                                     params:(NSDictionary *)params
-                                    success:(YKResponseSuccess)success
-                                       fail:(YKResponseFail)fail {
-    NSString * url = nil;
-//    NSString * url = [SYTAPIMethod apiMethodUrlWithAPIMethod:method apiClass:class];
+// + (YKURLSessionTask *)syt_postWithApiClass:(kCPDAPIClass)class
+//                                   ApiMethod:(kCPDAPIMethod)method
+//                                refreshCache:(BOOL)refreshCache
+//                                      params:(NSDictionary *)params
+//                                     success:(YKResponseSuccess)success
+//                                        fail:(YKResponseFail)fail {
+//     NSString * url = nil;
+// //    NSString * url = [SYTAPIMethod apiMethodUrlWithAPIMethod:method apiClass:class];
     
-    return [self postWithUrl:url
-                refreshCache:refreshCache
-                      params:params
-                    progress:nil
-                     success:success
-                       fail:fail];
-}
+//     return [self postWithUrl:url
+//                 refreshCache:refreshCache
+//                       params:params
+//                     progress:nil
+//                      success:success
+//                        fail:fail];
+// }
 
  
-+ (YKURLSessionTask *)syt_getWithApiClass:(kCPDAPIClass)class
-                                  ApiMethod:(kCPDAPIMethod)method
-                                refreshCache:(BOOL)refreshCache
-                                      params:(NSDictionary *)params
-                                     success:(YKResponseSuccess)success  {
-    return [self syt_getWithApiClass:class ApiMethod:method refreshCache:refreshCache params:params success:success fail:^(NSError *error) {
-//        [MBProgressHUD hideHUD];
-//        [MBProgressHUD showErrorMessage:@"请求失败"];
-    }];
-}
+// + (YKURLSessionTask *)syt_getWithApiClass:(kCPDAPIClass)class
+//                                   ApiMethod:(kCPDAPIMethod)method
+//                                 refreshCache:(BOOL)refreshCache
+//                                       params:(NSDictionary *)params
+//                                      success:(YKResponseSuccess)success  {
+//     return [self syt_getWithApiClass:class ApiMethod:method refreshCache:refreshCache params:params success:success fail:^(NSError *error) {
+// //        [MBProgressHUD hideHUD];
+// //        [MBProgressHUD showErrorMessage:@"请求失败"];
+//     }];
+// }
 
-+ (YKURLSessionTask *)syt_getWithApiClass:(kCPDAPIClass)class
-                                  ApiMethod:(kCPDAPIMethod)method
-                               refreshCache:(BOOL)refreshCache
-                                     params:(NSDictionary *)params
-                                    success:(YKResponseSuccess)success
-                                       fail:(YKResponseFail)fail {
-    NSString * url = nil;
+// + (YKURLSessionTask *)syt_getWithApiClass:(kCPDAPIClass)class
+//                                   ApiMethod:(kCPDAPIMethod)method
+//                                refreshCache:(BOOL)refreshCache
+//                                      params:(NSDictionary *)params
+//                                     success:(YKResponseSuccess)success
+//                                        fail:(YKResponseFail)fail {
+//     NSString * url = nil;
     
-//    NSString * url = [SYTAPIMethod apiMethodUrlWithAPIMethod:method apiClass:class];
+// //    NSString * url = [SYTAPIMethod apiMethodUrlWithAPIMethod:method apiClass:class];
     
-    return [self getWithUrl:url
-                refreshCache:refreshCache
-                      params:params
-                    progress:nil
-                     success:success
-                       fail:fail];
-}
+//     return [self getWithUrl:url
+//                 refreshCache:refreshCache
+//                       params:params
+//                     progress:nil
+//                      success:success
+//                        fail:fail];
+// }
 
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "UIColor+CPDExtension.h"
-#import <MTCategoryComponent/MTCategoryComponent.h>
+#import <MTCategoryComponent/MTCategoryComponentHeader.h>
 
 @implementation UIColor (CPDExtension)
 
