@@ -1,0 +1,19 @@
+source 'http://gitlab.yeahka.com/App/iOS/Modules/YKSpecs.git'
+#source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'                  #官方仓库地址 cdn
+source 'http://gitlab.yeahka.com/App/iOS/YeahkaNativeComSpecsIndex.git'
+
+platform :ios, '10.0'
+
+target '${POD_NAME}' do
+  pod 'CYLTabBarController'
+  pod 'YKNetWorking'
+
+  ${INCLUDED_PODS}
+  # ${INCLUDED_PODVERSIONS}
+end
+
+# target '${POD_NAME}_Tests', :exclusive => true do
+#   ${INCLUDED_PODS}
+#   # ${INCLUDED_PODVERSIONS}
+# end
